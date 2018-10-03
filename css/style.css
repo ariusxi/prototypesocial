@@ -1,0 +1,235 @@
+body{
+	background-color:#F2F2F2;
+}
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+.btn-secondary{color:#fff; background-color:# 777; border-color: #555;}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open .dropdown-toggle.btn-secondary{color:#fff;background:#888;border-color:#444;}
+ 
+body::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb {
+background-color: #333;
+}
+body::-webkit-scrollbar-thumb:hover{
+background-color: #5C5C5C;
+}
+div#contatos{
+	width:285px;
+	height:100%;
+	position:fixed;
+	background:#212121;
+	display:block;
+	z-index:100;
+	display:none;
+	border-right:1px solid #ccc;
+}
+.delete{
+	color:#000;
+	float:right;
+	cursor:pointer;
+}
+.delete:hover{
+	color:#666;
+}
+div.space_contatos{
+	height:59px;
+}
+.card{
+	margin-top:1%;
+	border:1px solid #ddd;
+	width:100%;
+	display:block;
+	border-radius:5px;
+	background-color:#fff;
+}
+.icon{
+	margin:15px;
+	display:block;
+	width:24px;
+	height:24px;
+	float:left;
+	cursor:pointer;
+}
+
+.card.card-image{
+	position:relative;
+	width:100%;
+	height:50%;
+}
+.card.card-title{
+	color:#fff;
+	text-transform:uppercase;
+	margin:5;
+}
+.card.card-text{
+	padding:20;
+}
+.capa{
+	width:100%;
+	height:130px;
+	border-radius: 5px 5px 0px 0px;
+}
+.mdl-navigation__link:hover{
+	text-decoration:none;
+}
+.img-perfil{
+	width:40px;
+	height:40px;
+	border-radius:60px;
+}
+.logo{
+	margin-top:20px;
+	width:auto;
+	height:auto;
+	float:left;
+	display:block;
+}
+.name{
+	margin:10px;
+}
+#nav{
+	background-color:#212121;
+	width:100%;
+	display:block;
+	position:fixed;
+	z-index:1000;
+}
+#nav_wrapper{
+	width:70%;
+	margin:0 auto;
+	text-align:left;
+}
+#nav ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	position:relative;
+}
+#nav ul li{
+	display:inline-block;
+}
+#nav ul li:hover{
+	background-color:#333;
+}
+#nav ul li a,visited{
+	color:#ccc;
+	display:block;
+	padding:15px;
+	text-decoration:none;
+}
+#nav ul li a:hover{
+	color:#ccc;
+	text-decoration:none;
+}
+#nav ul li:hover ul{
+	display:block;
+}
+#nav ul ul{
+	z-index:100;
+	display:none;
+	position:absolute;
+	background:#f1f1f1;
+	color:#000;
+	border-left:1px solid #212121;
+	border-bottom:1px solid #212121;
+	border-right:1px solid #212121;
+}
+#nav ul ul li{
+	display:block;
+}
+#nav ul ul li a,visited{
+	color:#ccc;
+}
+#nav ul ul li a:hover{
+	color:#fff;
+}
+
+/* == MENU DE PESQUISA == */
+
+.fechar{
+	float:left;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+div#resultado{
+	padding:5px;
+	width:100%;
+	background:#fff;
+	margin:0 auto;
+	border:1px solid #ccc;
+	z-index:100;
+	display:none;
+	position:absolute;
+}
+
+div#resultado p#res{
+	font:16 "Trebuchet MS", tahoma,arial;
+	color:#036;
+	float:left;
+	width:100%;
+	margin-bottom:8px;
+}
+
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+div#resultado div{
+	width:100%;
+	display:block;
+	background:#fff;
+	border-bottom:1px solid #ccc;
+}
+div#resultado div span{
+	font:16px "Trebuchet MS";
+	color:#000;
+}
+div#resultado div:hover{
+	background:#f4f4f4;
+}
+div#resultado div p{
+	font:14px tahoma, arial, helvetica;
+	color:#666;
+}
+
+/* == BARRA DE COMENTÁRIOS == */
+
+div#comentarios{
+	display:block;
+	width:100%;
+	border-top:1px solid #ccc;
+}
+div.comentario{
+	margin-top:1%;
+	display:block;
+	width:100%;
+	border-top:1px solid #ccc;
+}
+div.comentario p{
+	margin:2px;
+}
+div.mobile{
+	display:none;
+}
+.img_crop{
+	width:500px;
+	float:left;
+	padding:5px;
+	border:1px solid #ccc;
+}
+
+@media screen and (max-width:991px){
+	div.space2{
+		display:none;
+	}
+}

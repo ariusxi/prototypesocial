@@ -1,0 +1,167 @@
+div#contatos{
+	width:285px;
+	height:100%;
+	position:fixed;
+	background:#212121;
+	display:block;
+	z-index:100;
+	display:none;
+	border-right:1px solid #ccc;
+}
+div#contatos ul{
+	list-style-type:none;
+}
+div#contatos ul li{
+	float:left;
+	width:100%;
+	border:1px solid transparent;
+	padding:5px;
+	margin-right:-1px;
+	border-left:0;
+	position:relative;
+}
+div#contatos ul li:hover{
+	background-color:#333;
+}
+div#contatos ul li a{
+	text-decoration:none;
+	float:left;
+	width:70%;
+	margin-left:10px;
+	top:50%;
+	font:16px Tahoma,Arial, Helvetica;
+	color:#fff !important;
+}
+.imgSmall{
+	float:left;
+	width:44px;
+	height:44px;
+	overflow:hidden;
+	border-radius:50%;
+}
+.imgSmall img{
+	width:100%;
+}
+.status{
+	position:absolute;
+	right:8px;
+	top:50%;
+	width:12px;
+	height:12px;
+	margin-top:-6px;
+	border-radius:50%;
+	background:#666;
+}
+.status .off{background:#ccc;}
+.status .on{background:#090;}
+
+/* Aside dos chats */
+
+#chats{
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:82%;
+	z-index:99999;
+	position:fixed;
+}
+
+/** Janelas **/
+
+.window{
+	float:right;
+	width:270px;
+	margin-left:5px;
+	height:auto;
+	overflow:hidden;
+	border-radius:4px;
+}
+.window ul{list-style-type:none;}
+.window .header_window{
+	float:left;
+	background:#212121;
+	padding:5px;
+	color:white;
+	width:270px;
+	position:relative;
+	cursor:pointer;
+}
+.window .header_window .close{
+	text-decoration:none;
+	float:left;
+	color:white;
+	font:16px Tahoma, Arial;
+	padding:0 5px 0 0;
+}
+.window .body{
+	float:left;
+	width:100%;
+}
+.window .body .mensagens{
+	float:left;
+	width:100%;
+	background:#f2f2f2;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	height:230px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding:4px;
+}
+.mensagens ul{
+	float:left;
+	width:100%;
+}
+.mensagens ul li{
+	float:right;
+	width:80%;
+	background:#ffffff;
+	border: 1px solid #999;
+	border-radius:4px;
+	position:relative;
+	padding:4px;
+	margin-bottom:7px;
+}
+.mensagens ul li .imgSmall{
+	position:absolute;
+	width:35px;
+	height:35px;
+	left:-45px;
+	margin-top:-6px;
+	margin-bottom:7px;
+}
+.mensagens ul li p{
+	font:13px tahoma,arial;
+	color:#666;
+}
+.mensagens ul li.eu{
+	float:left;
+	background:#a4e9ff;
+}
+.mensagens::-webkit-scrollbar{
+	width:3px;
+}
+.mensagens::-webkit-scrollbar-track{
+	background:#666;
+	border-left:1px solid #ebebeb;
+	border-right:1px solid #ebebeb;
+}
+.mensagens::-webkit-scrollbar-thumb{
+	background:#666;
+}
+.mensagens::-webkit-scrollbar-thumb:hover{
+	#f2f2f2;
+}
+.window .body .send_message{
+	float:left;
+	width:100%;
+	position:relative;
+}
+.window .body .send_message input{
+	float:left;
+	width:100%;
+	padding:3px;
+	background:white;
+	border:1px solid #999;
+	outline:none;
+}

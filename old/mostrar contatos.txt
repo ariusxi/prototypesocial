@@ -1,0 +1,10 @@
+function mostra_contatos(){
+	var contatos = document.getElementById('contatos');
+	if(c == 0){
+		c = 1;
+		contatos.style.display="block";
+	}else{
+		c = 0;
+		contatos.style.display="none";
+	}
+}
